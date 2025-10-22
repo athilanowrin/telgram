@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in to Telegram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      width: 350px;
+    }
+
+    img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #2AABEE;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #229ED9;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #2AABEE;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
+    <h2>Sign in to Telegram</h2>
+    <p>Please confirm your country code and enter your phone number.</p>
+
+    <form>
+      <label for="country">Country</label>
+      <select id="country">
+        <option>India</option>
+        <option>United States</option>
+        <option>United Kingdom</option>
+        <option>Canada</option>
+      </select>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="+91 __ __" required>
+
+      <button type="submit">next</button>
+    </form>
+
+    <div class="footer">
+      <a href="#">LOG IN BY QR CODE</a>
+    </div>
+  </div>
+
+</body>
+</html>
